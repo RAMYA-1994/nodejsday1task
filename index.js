@@ -9,7 +9,7 @@ const path=require("path")
 console.log(data);
 const { isUtf8 } = require('buffer');
 const http=require('http')
-const PORT=7000
+const PORT= process.env.PORT||7000
 let server= http.createServer((req,res)=>{
 console.log("hello")
     try{
